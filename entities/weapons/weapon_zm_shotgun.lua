@@ -21,7 +21,7 @@ SWEP.Kind                  = WEAPON_HEAVY
 SWEP.WeaponID              = AMMO_SHOTGUN
 
 SWEP.Primary.Ammo          = "Buckshot"
-SWEP.Primary.Damage        = 11
+SWEP.Primary.Damage        = 9
 SWEP.Primary.Cone          = 0.085
 SWEP.Primary.Delay         = 0.8
 SWEP.Primary.ClipSize      = 8
@@ -167,10 +167,10 @@ function SWEP:GetHeadshotMultiplier(victim, dmginfo)
    if not IsValid(att) then return 3 end
 
    local dist = victim:GetPos():Distance(att:GetPos())
-   local d = math.max(0, dist - 140)
+   local d = math.max(0, dist - 50)
 
    -- decay from 3.1 to 1 slowly as distance increases
-   return 1 + math.max(0, (2.1 - 0.002 * (d ^ 1.25)))
+   return 1 + math.max(0, (1.5 - 0.002 * (d ^ 1.25)))
 end
 
 function SWEP:SecondaryAttack()

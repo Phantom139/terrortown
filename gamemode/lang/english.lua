@@ -514,9 +514,9 @@ L.grenade_fire    = "Incendiary grenade"
 
 L.unarmed_name    = "Holstered"
 L.crowbar_name    = "Crowbar"
-L.pistol_name     = "Pistol"
-L.rifle_name      = "Rifle"
-L.shotgun_name    = "Shotgun"
+L.pistol_name     = "Five Seven"
+L.rifle_name      = ".357 Rifle"
+L.shotgun_name    = "XM1014 Shotgun"
 
 -- Teleporter
 L.tele_name       = "Teleporter"

@@ -4,7 +4,7 @@ SWEP.HoldType              = "pistol"
 
 if CLIENT then
    SWEP.PrintName          = "sipistol_name"
-   SWEP.Slot               = 6
+   SWEP.Slot               = 2
 
    SWEP.ViewModelFlip      = false
    SWEP.ViewModelFOV       = 54
@@ -20,9 +20,9 @@ end
 
 SWEP.Base                  = "weapon_tttbase"
 
-SWEP.Primary.Recoil        = 1.35
-SWEP.Primary.Damage        = 28
-SWEP.Primary.Delay         = 0.38
+SWEP.Primary.Recoil        = 1.2
+SWEP.Primary.Damage        = 30
+SWEP.Primary.Delay         = 0.2
 SWEP.Primary.Cone          = 0.02
 SWEP.Primary.ClipSize      = 20
 SWEP.Primary.Automatic     = true
@@ -32,7 +32,9 @@ SWEP.Primary.Ammo          = "Pistol"
 SWEP.Primary.Sound         = Sound( "Weapon_USP.SilencedShot" )
 SWEP.Primary.SoundLevel    = 50
 
-SWEP.Kind                  = WEAPON_EQUIP
+SWEP.HeadshotMultiplier    = 1.5
+
+SWEP.Kind                  = WEAPON_PISTOL
 SWEP.CanBuy                = {ROLE_TRAITOR} -- only traitors can buy
 SWEP.WeaponID              = AMMO_SIPISTOL
 
