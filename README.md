@@ -1,10 +1,10 @@
-### Trouble in Terrorist Town ###
+# Trouble in Terrorist Town #
 ## Custom Version ##
-By: Phantom139
+### By: Phantom139 ###
 
 This is the custom version of Trouble in Terrorist Town (TTT) That I run on my private GMod server (Phantom's Server). This repository is a backup copy of these changes that is kept due to rapid monthly gmod updates that reset the game mode to the original state removing all of the key changes of this custom version.
 
-## Custom Content ##
+### Custom Content ###
 
 This version of TTT contains the following key changes from standard TTT:
 
@@ -13,7 +13,8 @@ This version of TTT contains the following key changes from standard TTT:
   * Weapon Range Statistics and Damage Falloff
 
 
-## Original Documentation ##
+### Original Documentation ###
+
 =========================
 Garry's Mod 13 gamemode 
 By Bad King Urgrain
