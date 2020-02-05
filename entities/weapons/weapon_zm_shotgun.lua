@@ -40,6 +40,9 @@ SWEP.UseHands              = true
 SWEP.ViewModel             = "models/weapons/cstrike/c_shot_xm1014.mdl"
 SWEP.WorldModel            = "models/weapons/w_shot_xm1014.mdl"
 
+SWEP.WeaponRange           = 250
+SWEP.WeaponRangeDamageFalloff = 87
+
 SWEP.IronSightsPos         = Vector(-6.881, -9.214, 2.66)
 SWEP.IronSightsAng         = Vector(-0.101, -0.7, -0.201)
 

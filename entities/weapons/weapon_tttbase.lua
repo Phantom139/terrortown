@@ -114,6 +114,9 @@ SWEP.Secondary.ClipMax      = -1
 
 SWEP.HeadshotMultiplier = 2.7
 
+SWEP.WeaponRange = -1
+SWEP.WeaponRangeDamageFalloff = -1
+
 SWEP.StoredAmmo = 0
 SWEP.IsDropped = false
 
@@ -336,6 +339,14 @@ end
 
 function SWEP:GetHeadshotMultiplier(victim, dmginfo)
    return self.HeadshotMultiplier
+end
+
+function SWEP:GetDamageRange()
+   return self.WeaponRange
+end
+
+function SWEP:GetRangeFalloff()
+   return self.WeaponRangeDamageFalloff
 end
 
 function SWEP:IsEquipment()

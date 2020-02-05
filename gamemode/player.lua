@@ -751,11 +751,47 @@ function GM:PlayerTraceAttack(ply, dmginfo, dir, trace)
    return false
 end
 
+function CalculateDistanceRange(ply, dmg)
+	local mePos = ply:GetPos()
+	local shooterPos = util.FirePositionFromDamage(dmg)
+	
+	if shooterPos == nil then
+		return 0
+	end
+	
+	return mePos:Distance(shooterPos)
+	
+end
+
 function GM:ScalePlayerDamage(ply, hitgroup, dmginfo)
    if dmginfo:IsBulletDamage() and ply:HasEquipmentItem(EQUIP_ARMOR) then
       -- Body armor nets you a damage reduction.
       dmginfo:ScaleDamage(0.7)
    end
+   
+   local wep = util.WeaponFromDamage(dmginfo)
+   if IsValid(wep) then
+      if wep:GetDamageRange() > 0 then
+         local dRange = CalculateDistanceRange(ply, dmginfo)
+		
+         -- Phantom139: Eventually I intend on doing a more "exponential dropoff" instead of a cliff drop, but this works for now.
+	     if dRange > wep:GetDamageRange() then
+			local farRange = dRange - wep:GetDamageRange()
+			local dropRate = wep:GetRangeFalloff()
+			
+			
+			local reduction = (farRange / dropRate) * 25
+			
+			-- print("Damage ".. powerDrop .. " - " .. reduction .. ".")
+			
+			if reduction >= 100 then
+			   dmginfo:ScaleDamage(0)
+			elseif reduction < 100 then
+			   dmginfo:ScaleDamage(1 - (reduction / 100))
+			end
+	     end
+	  end		
+   end   
 
    ply.was_headshot = false
    -- actual damage scaling
