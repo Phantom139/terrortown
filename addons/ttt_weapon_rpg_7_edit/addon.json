@@ -1,0 +1,11 @@
+{
+	"title"		:	"TTT RPG-7 Edited",
+	"type"		:	"weapon",
+	"tags"		:	[ "fun", "roleplay" ],
+	"ignore"	:
+	[
+		"*.psd",
+		"*.vcproj",
+		"*.svn*"
+	]
+}

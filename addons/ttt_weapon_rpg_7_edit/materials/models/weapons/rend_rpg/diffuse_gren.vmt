@@ -1,0 +1,16 @@
+VertexLitGeneric
+{
+	"$basetexture" "models/weapons/rend_rpg/DIFFUSE_GREN"
+	"$bumpmap" "models/weapons/rend_rpg/DIFFUSE_GREN_NM"
+	"$normalmapalphaenvmapmask" 1
+	"$phongexponenttexture" "models/weapons/rend_rpg/DIFFUSE_GREN_GLOSS"
+	"$envmap" "env_cubemap"
+	"$envmaptint" "[0.3	0.3 0.35]"
+	"$model" 1
+	"$phong" 1
+	"$halflambert" 1
+	"$phongboost" 0.45
+	"$rimlight" 1
+	"$rimlightexponent"       2
+	"$phongfresnelranges"		"[0.5 3 8]"
+}

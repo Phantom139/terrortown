@@ -1,0 +1,14 @@
+VertexLitGeneric
+{
+	"$basetexture" "models/weapons/rend_rpg/v_hands"
+	"$bumpmap" "models/weapons/rend_rpg/v_hands_normal"
+	"$envmapmask" "models/weapons/rend_rpg/v_hands_spec"
+	"$envmap" "env_cubemap"
+	"$envmapcontrast" 1
+	"$envmaptint" "[0.2	0.2 0.35]"
+	"$model" 1
+	"$phong" 1
+	"$halflambert" "1"
+//	"$phongboost" 0.75
+	"$phongfresnelranges"		"[0.9 3 8]"
+}

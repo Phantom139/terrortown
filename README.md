@@ -11,8 +11,21 @@ This version of TTT contains the following key changes from standard TTT:
   * OHK Knifes
   * Balanced Weapons
   * Weapon Range Statistics and Damage Falloff
+  
+### Repository Extras ###
 
+Included is the addons folder which contains the following addons used by my server with my balance changes and edits (I take no credit for these addons other than my own contributions to the few I helped work on):
 
+  * TTT-Deathbadge (Fixed & Working)
+  * Gauss Rifle (1-Shot Verison, Modified)
+  * Remote C4 (Modified)
+  * TTT Weapon Collection (Balanced for my server)
+  * RPG-7 (Modified, Balanced)
+  * Weighted Traitor Selection (See: https://github.com/lzinga/TTTWeightedTraitorSelection)
+
+All additional addons used by my server can be "subscribed" through the steam-workshop collection system: https://steamcommunity.com/sharedfiles/filedetails/?id=1380716070
+  
+  
 ### Original Documentation ###
 Garry's Mod 13 gamemode 
 By Bad King Urgrain
