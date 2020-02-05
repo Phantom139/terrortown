@@ -14,8 +14,6 @@ This version of TTT contains the following key changes from standard TTT:
 
 
 ### Original Documentation ###
-
-=========================
 Garry's Mod 13 gamemode 
 By Bad King Urgrain
 http://ttt.badking.net/
