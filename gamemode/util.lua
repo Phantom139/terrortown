@@ -32,6 +32,26 @@ function util.WeaponFromDamage(dmg)
    return wep
 end
 
+-- Phantom139: Added
+--  Attempts to collect the firing position of the bullet when another object is damaged
+function util.FirePositionFromDamage(dmg)
+   local inf = dmg:GetInflictor()
+   local pos = nil
+   if IsValid(inf) then
+	  if inf:IsWeapon() or inf.Projectile then
+		 pos = nil
+	  elseif dmg:IsDamageType(DMG_DIRECT) or dmg:IsDamageType(DMG_CRUSH) then
+		 -- DMG_DIRECT is the player burning, no weapon involved
+		 -- DMG_CRUSH is physics or falling on someone
+		 pos = nil
+	  elseif inf:IsPlayer() then
+		 pos = inf:GetPos()
+	  end
+   end
+
+   return pos
+end
+
 -- Gets the table for a SWEP or a weapon-SENT (throwing knife), so not
 -- equivalent to weapons.Get. Do not modify the table returned by this, consider
 -- as read-only.
